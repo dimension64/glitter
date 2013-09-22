@@ -1,0 +1,8 @@
+#comments
+  .comment#author
+    .comment-meta
+      = avatar(User.find(current_user.id).email)
+      %p.author
+        = User.find(current_user.id).username
+    .comment-time
+      %p.time Add a comment now
